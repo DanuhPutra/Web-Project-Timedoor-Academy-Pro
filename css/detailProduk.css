@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@600&family=Josefin+Sans:wght@700&family=Poppins&family=Quicksand:wght@700&family=Rubik:wght@300&family=Tilt+Warp&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --warna-item: black;
+  --warna-putih: white;
+  --warna-puth2: #eeeeee;
+  --warna-abu: darkgrey;
+  --warna-abugelap: #393e46;
+  --warna-orange: #d65a31;
+  --warna-header: #6096b4;
+}
+body {
+  margin-top: 60px;
+}
+
+header {
+  background-color: var(--warna-header);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+header .logo {
+  height: 60px;
+  line-height: 60px;
+  float: left;
+  font-weight: bold;
+  display: flex;
+}
+header .logo h1 {
+  font-family: "Tilt Warp", cursive;
+  color: var(--warna-abugelap);
+}
+header .logo h1 span {
+  color: var(--warna-orange);
+}
+nav {
+  float: right;
+}
+nav .navContainer {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+nav .navContainer li {
+  right: 0;
+}
+nav .navContainer a {
+  text-decoration: none;
+  color: var(--warna-item);
+  display: block;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 15px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+nav .navContainer #login {
+  background-color: black;
+  border-radius: 25px;
+}
+nav .navContainer #login span {
+  color: var(--warna-orange);
+}
+nav .navContainer a:hover {
+  background-color: var(--warna-orange);
+  color: white;
+  border-radius: 25px;
+}
+nav .navContainer #login span:hover {
+  color: white;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.isi-dropdown {
+  display: none;
+  position: absolute;
+  background-color: var(--warna-header);
+  min-width: 160px;
+  padding: 10 12px;
+}
+.dropdown:hover .isi-dropdown {
+  display: block;
+  list-style: none;
+}
+
+.container {
+  height: 92vh;
+  position: relative;
+}
+.container .textH1 {
+  font-size: 40px;
+  margin-left: 10px;
+}
+.container .content {
+  display: flex;
+  gap: 40px;
+}
+.container .content .gambar img {
+  height: 84vh;
+  width: 40vw;
+  object-fit: cover;
+  margin-left: 30px;
+}
+.container .content .deskripsi {
+  background-color: bisque;
+  margin-right: 50px;
+  height: 75vh;
+  overflow: scroll;
+  padding: 30px;
+  overflow-x: hidden;
+}
+.container .content .deskripsi h1 {
+  font-size: 30px;
+  color: var(--warna-orange);
+  margin-bottom: 20px;
+}
+.container .content .deskripsi h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.container .content .deskripsi h3 {
+  font-size: 25px;
+  color: var(--warna-orange);
+  margin: 20px 0px;
+}
+.container .content .deskripsi p {
+  font-size: 17px;
+  line-height: 30px;
+}
+.container .content .deskripsi ul {
+  padding-left: 30px;
+}
+.container .content .deskripsi ul li {
+  font-size: 19px;
+}
+.container .content .deskripsi .pilih {
+  width: 20rem;
+  height: 30px;
+  margin-bottom: 30px;
+}
+.container .content .deskripsi input {
+  display: inline-block;
+  line-height: 4.5em;
+  width: 2em;
+  margin-bottom: 20px;
+}
+.container .content .deskripsi input label {
+  font-size: 20px;
+}
+.container .content .deskripsi button {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 10px;
+}
+.container .content .deskripsi .komen {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.container .content .deskripsi .komen h6 {
+  font-size: 19px;
+}
+.container .content .deskripsi .komen textarea {
+  color: grey;
+}
+
+.kotak {
+  position: relative;
+  height: 55vh;
+}
+.kotak .boxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.kotak .judul {
+  font-size: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.kotak .box-kartu {
+  width: 330px;
+  height: 200px;
+  border-width: 3px;
+  border-style: dashed;
+  border-color: orange;
+  border-radius: 20px;
+}
+.kotak .box-kartu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.kotak .box-kartu .isi {
+  transform: translate(0%, -10%);
+  text-align: center;
+}
+.kotak .box-kartu .isi a {
+  background-color: black;
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+}
+.kotak .box-kartu .isi h2 {
+  margin-top: 20px;
+}
+.kotak .box-kartu .isi h3 {
+  margin-top: 20px;
+}
+.kotak .box-kartu .isi a:hover {
+  background-color: var(--warna-orange);
+  color: black;
+}
+
+footer {
+  background-color: var(--warna-abugelap);
+  background-image: url("../img/sepatu5.png");
+  background-repeat: repeat-y;
+}
+footer p {
+  text-align: center;
+  color: grey;
+  padding: 30px;
+  font-family: "Rubik", sans-serif;
+}
+
+footer .footerContainer {
+  display: flex;
+  justify-content: center;
+  gap: 400px;
+}
+footer .box {
+  margin-top: 30px;
+}
+footer .box h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--warna-orange);
+  font-family: "Josefin Sans", sans-serif;
+}
+footer .box ul {
+  list-style: none;
+}
+footer .box ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  line-height: 30px;
+  font-family: "Rubik", sans-serif;
+  padding: 5px 10px;
+}
+footer .box i {
+  font-size: 25px;
+  margin: 10px;
+  color: wheat;
+}
+footer .box ul li a:hover {
+  color: var(--warna-orange);
+}
+footer .box i:hover {
+  color: var(--warna-orange);
+}
